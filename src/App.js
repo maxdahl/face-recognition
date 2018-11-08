@@ -66,7 +66,7 @@ class App extends Component {
         "a403429f2ddf4b49b307e318f00e528b", this.state.imageLink)
         .then(response => {
             if(response) {
-                fetch('http://localhost:3000/entry/' + this.state.user.id, {
+                fetch('https://face-recognition-sze.herokuapp.com/entry/' + this.state.user.id, {
                     method: 'put',
                     headers: {'Content-Type': 'application/json'}
                 })
